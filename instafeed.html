@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c67955b62c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Insta Foto Feed Bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--Navbar-->
+        <nav class="navbar bg-light">
+            <div class="container-fluid mx-auto">
+                <a class="flex-grow-1 navbar-brand" href="#">
+                    <span><i class="fa-brands fa-instagram"></i> Instagram</span>
+                    <!--Button Create a new Post-->
+                </a>
+                <button type="button" class="me-3 d-flex btn btn-success" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Create a new post</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Caption:</label>
+                                        <textarea class="form-control" id="message-text"></textarea> <br>
+                                        <button type="button" class="btn btn-outline-dark"><i
+                                                class="fa-solid fa-camera"></i></button>
+                                        <button type="button" class="btn btn-outline-dark"><i
+                                                class="fa-solid fa-location-dot"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Dropdown menu-->
+                <div class="dropdown">
+                    <a type="button" class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">
+                                <p class="text-danger">Log out</p>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Click-->
+        <div class="m-3 d-grid gap-2 d-md-block text-center">
+            <button class="btn btn-link" type="button" onclick="document.location='index.html'"><i
+                    class="fa-solid fa-table-cells"></i></button>
+            <button class="btn btn-link" type="button" onclick="document.location='instafeed.html'"><i
+                    class="fa-solid fa-square"></i></button>
+
+        </div>
+        <!--Second Page-->
+        <div class="container-fluid d-grid gap-3" style="width: 38%;">
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col">
+                            Sunset Drive
+                        </div>
+                        <div class="col text-end">
+                            11/06/22
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/car.jpeg" class="card-img-top">
+                <div class="card-body">
+                    <p><strong>458 likes</strong></p>
+                    <p>California weekend sunset drive!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col">
+                            Garden Flowers
+                        </div>
+                        <div class="col text-end">
+                            11/11/22
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/orangeflowers.jpeg" class="card-img-top">
+                <div class="card-body">
+                    <p><strong>311 likes</strong></p>
+                    <p>Mood-flowers!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col">
+                            White Roses
+                        </div>
+                        <div class="col text-end">
+                            11/18/22
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/roses.jpg" class="card-img-top">
+                <div class="card-body">
+                    <p><strong>831 likes</strong></p>
+                    <p>Roses are gorgeous flowers!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col">
+                            Pumpkins
+                        </div>
+                        <div class="col text-end">
+                            11/21/22
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/pumpkin.webp" class="card-img-top">
+                <div class="card-body">
+                    <p><strong>582 likes</strong></p>
+                    <p>It's this time of the year!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col">
+                            Hot Baloons
+                        </div>
+                        <div class="col text-end">
+                            11/25/22
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/ballons.jpeg" class="card-img-top">
+                <div class="card-body">
+                    <p><strong>631 likes</strong></p>
+                    <p>What can be more romantic then hot balloons!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col">
+                            Architecture
+                        </div>
+                        <div class="col text-end">
+                            11/30/22
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/home.jpeg" class="card-img-top">
+                <div class="card-body">
+                    <p><strong>215 likes</strong></p>
+                    <p>Beautiful nineteenth century building!</p>
+                </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col">
+                                Flowers Composition
+                            </div>
+                            <div class="col text-end">
+                                12/1/22
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./images/twoflowers.webp" class="card-img-top">
+                    <div class="card-body">
+                        <p><strong>403 likes</strong></p>
+                        <p>What a gorgeous flowers Composition!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col">
+                                Utah mountains
+                            </div>
+                            <div class="col text-end">
+                                12/05/22
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./images/mountains.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <p><strong>523 likes</strong></p>
+                        <p>Explore the beautifule mountains of Utah!</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col">
+                                Kettle Plants Pot
+                            </div>
+                            <div class="col text-end">
+                                12/10/22
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./images/kettle.webp" class="card-img-top">
+                    <div class="card-body">
+                        <p><strong>387 likes</strong></p>
+                        <p>Creative kettle pot for your plants!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
